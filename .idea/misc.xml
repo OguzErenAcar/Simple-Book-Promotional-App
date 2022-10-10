@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/KitapTanitimi/Simple-Book-Promotional-App/app/src/main/res/layout/fragment_liste.xml" value="0.18840579710144928" />
+        <entry key="..\:/KitapTanitimi/Simple-Book-Promotional-App/app/src/main/res/layout/fragment_tanitim.xml" value="0.22" />
+        <entry key="..\:/KitapTanitimi/Simple-Book-Promotional-App/app/src/main/res/layout/recycle_row.xml" value="0.18840579710144928" />
         <entry key="..\:/KitapTanitimi/app/src/main/res/layout/activity_main.xml" value="0.1330166270783848" />
         <entry key="..\:/KitapTanitimi/app/src/main/res/layout/fragment_liste.xml" value="0.14" />
         <entry key="..\:/KitapTanitimi/app/src/main/res/layout/fragment_tanitim.xml" value="0.25" />

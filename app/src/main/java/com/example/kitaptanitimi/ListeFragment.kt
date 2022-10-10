@@ -18,7 +18,6 @@ class ListeFragment : Fragment() {
 
     private lateinit var binding:FragmentListeBinding
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -47,9 +46,7 @@ class ListeFragment : Fragment() {
        sqlVeriAlma()
 
     }
-
     fun sqlVeriAlma() {
-
         try {
             activity?.let {
                 System.out.println("sql al")
@@ -62,9 +59,6 @@ class ListeFragment : Fragment() {
                 while (cursor.moveToNext()) {
                     kitapIsmiListesi.add(cursor.getString(kitapIsmiIndex))
                     kitapIdListesi.add(cursor.getInt(kitapidIndex))
-                    System.out.println(cursor.getString(kitapIsmiIndex))
-                    System.out.println(cursor.getString(kitapidIndex))
-                    System.out.println( kitapIsmiListesi)
 
                 }
                 listeAdapter.notifyDataSetChanged()

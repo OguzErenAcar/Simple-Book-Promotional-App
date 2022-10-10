@@ -17,7 +17,7 @@ class ListeRecycleAdapter(val kitapListesi : ArrayList<String>,val idListesi:Arr
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): KitapHolder {
      //   val inflater =LayoutInflater.from(parent.context)
      //   val view =inflater.inflate(R.layout.recycle_row, parent, false)
-        System.out.print("oncreateviewholder")
+       // System.out.println("oncreateviewholder")
         binding = RecycleRowBinding.inflate(LayoutInflater.from(parent.context), parent, false)
 
         return KitapHolder(binding)
@@ -28,19 +28,30 @@ class ListeRecycleAdapter(val kitapListesi : ArrayList<String>,val idListesi:Arr
     }
 
     override fun onBindViewHolder(holder: KitapHolder, position: Int) {
-        System.out.print("recycle ad")
+      //  System.out.println("recycle ad")
         holder.item_View.recycleRowText.text=kitapListesi[position]
         holder.itemView.setOnClickListener{
             val action= ListeFragmentDirections.actionListeFragmentToTanitimFragment("recyclerdangeldim",idListesi[position])
             Navigation.findNavController(it).navigate(action)
         }
     }
-
-
-
-
-
-
-
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

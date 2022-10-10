@@ -9,6 +9,7 @@ import android.view.MenuItem
 import androidx.navigation.Navigation
 import com.example.kitaptanitimi.databinding.ActivityMainBinding
 import java.util.concurrent.Executor
+import  android.widget.Button
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,10 +20,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+
     }
-
-
-
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
 
@@ -33,16 +32,29 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-
-    if(item.itemId==R.id.kitap_ekleme_itemi){
-
-
+    if(item.itemId==R.id.kitap_ekleme_itemi)
+    {
         val action =ListeFragmentDirections.actionListeFragmentToTanitimFragment("menudengeldim",0)
         Navigation.findNavController(this,R.id.fragment).navigate(action)
     }
-
         return super.onOptionsItemSelected(item)
     }
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
